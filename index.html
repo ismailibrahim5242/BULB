@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=im, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center" style="background-color: blue; color: aliceblue; font: 600; font-style: oblique;"> LAUTECH NEPA</h1>
+   <script>
+    function light(sw) {
+        var pic;
+        if (sw==0) {
+            pic ="bulb OFF.jpg"
+        } else {
+            pic="bulb ON.jpg"
+        }
+        document.getElementById('myimage').src = pic;
+    }
+   </script>
+
+   <img id="myimage" src="bulb OFF.jpg" alt="" width="150" height="500">
+
+   <button type="button" onclick="light(1)" style="color: black;">Light on</button>
+
+   <button type="button" onclick="light(0)" style="background-color: white; color: red;">Light off</button>
+</body>
+</html>
